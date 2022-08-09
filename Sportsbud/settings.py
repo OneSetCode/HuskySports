@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -78,15 +79,41 @@ WSGI_APPLICATION = 'Sportsbud.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# ---- MicroSoft SQL Server Database (mssql-django)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mssql',  
+#         'NAME': os.getenv("DBName"),
+#         'HOST': os.getenv("Host"), 
+#         'PORT': os.getenv("Port"), 
+#         'USER': os.getenv("UserID"),  
+#         'PASSWORD': os.getenv("Password"), 
+#     }
+# }
+
+# ---- Default SQLite database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# ---- Migrate to Heroku Postgres database
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
+
+# ---- MySQL databse (pymysql, imported in _init_.py)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  
+#         'NAME': os.getenv("DBName"),
+#         'HOST': os.getenv("Host"), 
+#         'PORT': os.getenv("Port"), 
+#         'USER': os.getenv("UserID"),  
+#         'PASSWORD': os.getenv("Password"), 
+#     }
+# }
  
 
 # Password validation
