@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b-+*k@nc$!_%lctf_s_lrjnm%dcbcs!43$=ljg!za_#qxi7gtd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # Turned on just to enable Heroku to serve media files so that I don't need to pay for AWS S3.
 # 正常情况下生产环境debug一定要False，不过这个web不重要，turn True的话heroku就可以存储media文件而不用aws s3了。
 
@@ -33,6 +33,8 @@ INSTALLED_APPS = [
 
     'rest_framework', 
     'corsheaders',
+
+    'storages', # AWS S3 bucket storage
 ]
 
 AUTH_USER_MODEL = 'baseapp.User'
@@ -150,15 +152,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles' 
+# --- if not using AWS S3
+# STATIC_URL = '/static/'
+# STATIC_ROOT = BASE_DIR / 'staticfiles' 
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
+
 STATICFILES_DIRS = [
-    # BASE_DIR / 'reactapp/build/static',
     BASE_DIR / 'static'
 ]
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -167,3 +169,40 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+# --- S3 BUCKETS CONFIGURE
+AWS_ACCESS_KEY_ID = 'AKIA4DVZ4GUFQE6GZENR'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'nick-first-bucket'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+STATIC_LOCATION = 'static' 
+STATIC_URL = f'https://nick-first-bucket.s3.amazonaws.com/{STATIC_LOCATION}/'
+STATICFILES_STORAGE = 'Sportsbud.storage_backends.StaticStorage'
+
+MEDIA_LOCATION = 'media'
+MEDIA_URL = f'https://nick-first-bucket.s3.amazonaws.com/{MEDIA_LOCATION}/'
+DEFAULT_FILE_STORAGE = 'Sportsbud.storage_backends.MediaStorage'
+
+# AWS S3 bucket CORS configuration
+'''
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "POST",
+            "GET",
+            "PUT"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+'''
