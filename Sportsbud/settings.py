@@ -171,19 +171,19 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 
 # --- S3 BUCKETS CONFIGURE
-AWS_ACCESS_KEY_ID = 'AKIA4DVZ4GUFQE6GZENR'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'nick-first-bucket'
+AWS_ACCESS_KEY_ID = '*******************'
+AWS_SECRET_ACCESS_KEY = '*****************************'
+AWS_STORAGE_BUCKET_NAME = '*******************'
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
 STATIC_LOCATION = 'static' 
-STATIC_URL = f'https://nick-first-bucket.s3.amazonaws.com/{STATIC_LOCATION}/'
+STATIC_URL = f'https://***********.s3.amazonaws.com/{STATIC_LOCATION}/'
 STATICFILES_STORAGE = 'Sportsbud.storage_backends.StaticStorage'
 
 MEDIA_LOCATION = 'media'
-MEDIA_URL = f'https://nick-first-bucket.s3.amazonaws.com/{MEDIA_LOCATION}/'
+MEDIA_URL = f'https://***********.s3.amazonaws.com/{MEDIA_LOCATION}/'
 DEFAULT_FILE_STORAGE = 'Sportsbud.storage_backends.MediaStorage'
 
 # AWS S3 bucket CORS configuration
