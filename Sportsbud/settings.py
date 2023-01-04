@@ -12,8 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b-+*k@nc$!_%lctf_s_lrjnm%dcbcs!43$=ljg!za_#qxi7gtd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# 正常情况下生产环境debug一定要False，不过这个web不重要，turn True的话heroku就可以存储media文件而不用aws s3了。
+DEBUG = True
 
 ALLOWED_HOSTS = ['huskysports.herokuapp.com', '127.0.0.1', 'web-production-dfdf.up.railway.app']
 
