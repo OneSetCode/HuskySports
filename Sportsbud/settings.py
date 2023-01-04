@@ -100,9 +100,9 @@ DATABASES = {
     }
 }
 # ---- Migrate to Heroku Postgres database
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+# import dj_database_url
+# db_from_env = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(db_from_env)
 
 # ---- MySQL databse (pymysql, imported in _init_.py)
 # DATABASES = {
@@ -171,19 +171,19 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 
 # --- S3 BUCKETS CONFIGURE
-AWS_ACCESS_KEY_ID = '*******************'
-AWS_SECRET_ACCESS_KEY = '*****************************'
-AWS_STORAGE_BUCKET_NAME = '*******************'
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME")
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
 STATIC_LOCATION = 'static' 
-STATIC_URL = f'https://***********.s3.amazonaws.com/{STATIC_LOCATION}/'
+STATIC_URL = f'https://nick-first-bucket.s3.amazonaws.com/{STATIC_LOCATION}/'
 STATICFILES_STORAGE = 'Sportsbud.storage_backends.StaticStorage'
 
 MEDIA_LOCATION = 'media'
-MEDIA_URL = f'https://***********.s3.amazonaws.com/{MEDIA_LOCATION}/'
+MEDIA_URL = f'https://nick-first-bucket.s3.amazonaws.com/{MEDIA_LOCATION}/'
 DEFAULT_FILE_STORAGE = 'Sportsbud.storage_backends.MediaStorage'
 
 # AWS S3 bucket CORS configuration
