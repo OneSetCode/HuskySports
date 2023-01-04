@@ -23,7 +23,6 @@ optional-django==0.1.0
 packaging==21.3
 Pillow==9.2.0
 platformdirs==2.5.2
-#psycopg2==2.9.3
 py==1.11.0
 pycodestyle==2.8.0
 pymssql==2.2.5
