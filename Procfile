@@ -1,1 +1,0 @@
-web: gunicorn Sportsbud.wsgi --log-file -
