@@ -10,7 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', TemplateView.as_view(template_name='index.html')),
     path('', include('baseapp.urls')),
-    path('api/', include('baseapp.api.urls')), 
+    path('api/', include('baseapp.api.urls')),
     re_path('media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 ]
 
