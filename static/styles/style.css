@@ -48,7 +48,11 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   color: var(--color-light-gray);
-  background-color: var(--color-bg);
+  /*background-color: var(--color-bg);*/
+  background-image: url( '/static/images/huskies.jpg' );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -58,7 +62,7 @@ img {
 
 a {
   display: inline-block;
-  color: var(--color-main);
+  color: var(--color-main); 
   text-decoration: none;
 }
 
