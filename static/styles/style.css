@@ -597,8 +597,8 @@ a {
   transition: all 0.3s ease-in-out;
 } 
 
-.topics__list li a:last-child {
-  padding-bottom: 0rem;
+.topics__list li:last-child {
+  margin-bottom: 0rem;
 }
 
 .topics__list li a.active,
