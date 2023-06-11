@@ -598,7 +598,12 @@ a {
 } 
 
 .topics__list li a:last-child {
-  padding-bottom: 0rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0rem;
+  font-weight: 500;
+  color: var(--color-light-gray);
+  transition: all 0.3s ease-in-out;
 }
 
 .topics__list li a.active,
