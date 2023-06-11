@@ -657,7 +657,7 @@ a {
 
 .roomList__header p {
   font-weight: 500;
-  color: var(--color-light);
+  color: var(--color-main);
 }
 
 /*========== Room List Room ==========*/
