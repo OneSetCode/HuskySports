@@ -9,7 +9,7 @@
   --color-light: #e5e5e5;
   --color-gray: #8b8b8b;
   --color-light-gray: #b2bdbd;
-  --color-bg: #0b0b0b;
+  --color-bg: #211f5d;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 }
@@ -48,12 +48,12 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   color: var(--color-light-gray);
+  min-height: 100vh;
   /*background-color: var(--color-bg);*/
-  background-image: url( '/static/images/huskies.jpg' );
+  background-image: url( '/static/images/husky.jpg' );
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
-  min-height: 100vh;
 }
 
 img {
