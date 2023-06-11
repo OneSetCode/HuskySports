@@ -3,13 +3,13 @@
 :root {
   --color-main: #8cf1f1;
   --color-main-light: #e1f6fb;
-  --color-dark: #1c1c20;
-  --color-dark-medium: #0b0b0b;
+  --color-dark: #40255d;
+  --color-dark-medium: #1b0823;
   --color-dark-light: #4b8eed;
   --color-light: #e5e5e5;
   --color-gray: #8b8b8b;
   --color-light-gray: #b2bdbd;
-  --color-bg: #211f5d;
+  --color-bg: #29315a;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 }
@@ -574,12 +574,12 @@ a {
 .topics__header h2 {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--color-light-gray);
+  color: var(--color-light);
 }
 
 .topics__list {
   list-style: none;
-  background-color: rgba(28, 28, 32, 0.7);
+  background-color: rgba(28, 28, 32, 0.8);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding-top: 2rem;
