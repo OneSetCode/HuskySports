@@ -563,12 +563,13 @@ a {
 
 .topics__header {
   margin-bottom: 2rem;
+  background-color: var(--color-main);
 }
 
 .topics__header h2 {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--color-dark-light);
+  color: var(--color-light-gray);
 }
 
 .topics__list {
@@ -582,7 +583,8 @@ a {
   font-weight: 500;
   color: var(--color-light-gray);
   transition: all 0.3s ease-in-out;
-}
+  background-color: var(--color-dark);
+} 
 
 .topics__list li a.active,
 .topics__list li a:hover {
