@@ -178,9 +178,12 @@ AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME")
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
-STATIC_LOCATION = 'static' 
-STATIC_URL = f'https://nick-first-bucket.s3.amazonaws.com/{STATIC_LOCATION}/'
-STATICFILES_STORAGE = 'Sportsbud.storage_backends.StaticStorage'
+#STATIC_LOCATION = 'static' 
+#STATIC_URL = f'https://nick-first-bucket.s3.amazonaws.com/{STATIC_LOCATION}/'
+#STATICFILES_STORAGE = 'Sportsbud.storage_backends.StaticStorage'
+
+STATIC_URL = 'static/'
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 
 MEDIA_LOCATION = 'media'
 MEDIA_URL = f'https://nick-first-bucket.s3.amazonaws.com/{MEDIA_LOCATION}/'
