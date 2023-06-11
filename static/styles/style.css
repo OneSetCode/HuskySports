@@ -565,6 +565,8 @@ a {
 .topics__header {
   margin-bottom: 2rem;
   background-color: var(--color-dark-light);
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .topics__header h2 {
@@ -576,6 +578,8 @@ a {
 .topics__list {
   list-style: none;
   background-color: var(--color-dark);
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .topics__list li a {
