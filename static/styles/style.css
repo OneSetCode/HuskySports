@@ -51,9 +51,10 @@ body {
   min-height: 100vh;
   /*background-color: var(--color-bg);*/
   background-image: url( '/static/images/husky.jpg' );
-  /*background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: top;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 img {
