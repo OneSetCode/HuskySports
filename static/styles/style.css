@@ -604,9 +604,6 @@ a {
 .topics__list li a svg {
   padding: 0.5rem 1rem;
   border-radius: 3px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .topics__list li a.active,
