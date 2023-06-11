@@ -598,7 +598,7 @@ a {
 } 
 
 .topics__list li a:last-child {
-  margin-bottom: 0rem;
+  padding-bottom: 0rem;
 }
 
 .topics__list li a.active,
