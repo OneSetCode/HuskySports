@@ -579,7 +579,7 @@ a {
 
 .topics__list {
   list-style: none;
-  background-color: rgba(28, 28, 32, 0.5);
+  background-color: rgba(28, 28, 32, 0.6);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 2rem;
@@ -601,7 +601,6 @@ a {
 
 .topics__list li a span {
   padding: 0.5rem 1rem;
-  background-color: var(--color-dark);
   border-radius: 3px;
   font-size: 1.3rem;
   font-weight: 700;
