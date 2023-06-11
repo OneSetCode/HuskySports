@@ -618,10 +618,11 @@ a {
 
 
 .topics__list2 {
+  list-style: none;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 0rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
