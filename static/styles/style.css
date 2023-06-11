@@ -565,7 +565,10 @@ a {
   background-color: var(--color-dark-light);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .topics__header h2 {
@@ -576,7 +579,7 @@ a {
 
 .topics__list {
   list-style: none;
-  background-color: var(--color-dark);
+  background-color: rgba(28, 28, 32, 0.5);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 2rem;
