@@ -93,7 +93,6 @@ a {
   padding: 0;
   color: var(--color-main);
   box-shadow: none;
-  background-color: var(--color-dark);
 }
 
 .btn--link:hover {
@@ -563,9 +562,9 @@ a {
 ================================*/
 
 .topics__header {
-  margin-bottom: 2rem;
   background-color: var(--color-dark-light);
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   padding: 2rem;
 }
 
@@ -578,7 +577,8 @@ a {
 .topics__list {
   list-style: none;
   background-color: var(--color-dark);
-  border-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   padding: 2rem;
 }
 
