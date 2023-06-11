@@ -93,7 +93,7 @@ a {
   padding: 0;
   color: var(--color-main);
   box-shadow: none;
-  fill: var(--color-dark);
+  background-color: var(--color-dark);
 }
 
 .btn--link:hover {
@@ -564,7 +564,7 @@ a {
 
 .topics__header {
   margin-bottom: 2rem;
-  fill: var(--color-dark-light);
+  background-color: var(--color-dark-light);
 }
 
 .topics__header h2 {
@@ -575,6 +575,7 @@ a {
 
 .topics__list {
   list-style: none;
+  background-color: var(--color-dark);
 }
 
 .topics__list li a {
@@ -584,7 +585,6 @@ a {
   font-weight: 500;
   color: var(--color-light-gray);
   transition: all 0.3s ease-in-out;
-  fill: var(--color-dark);
 } 
 
 .topics__list li a.active,
