@@ -3,13 +3,13 @@
 :root {
   --color-main: #8cf1f1;
   --color-main-light: #e1f6fb;
-  --color-dark: #192244;
-  --color-dark-medium: #060b25;
+  --color-dark: #25243c;
+  --color-dark-medium: #11193e;
   --color-dark-light: #4b8eed;
   --color-light: #e5e5e5;
   --color-gray: #8b8b8b;
   --color-light-gray: #b2bdbd;
-  --color-bg: #1f2751;
+  --color-bg: #353b5c;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 }
@@ -657,7 +657,7 @@ a {
 
 .roomList__header p {
   font-weight: 500;
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 
 /*========== Room List Room ==========*/
