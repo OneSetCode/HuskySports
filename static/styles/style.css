@@ -588,6 +588,16 @@ a {
   padding-right: 2rem;
 }
 
+.topics__innerlist {
+  list-style: none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .topics__list li a {
   display: flex;
   justify-content: space-between;
