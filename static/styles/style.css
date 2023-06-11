@@ -582,10 +582,7 @@ a {
   background-color: rgba(28, 28, 32, 0.7);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 0rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 
 .topics__list li a {
@@ -596,10 +593,6 @@ a {
   color: var(--color-light-gray);
   transition: all 0.3s ease-in-out;
 } 
-
-.topics__list li a:last-child {
-  padding-bottom: 0rem;
-}
 
 .topics__list li a.active,
 .topics__list li a:hover {
