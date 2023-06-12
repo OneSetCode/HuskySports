@@ -50,7 +50,7 @@ body {
   color: var(--color-light-gray);
   min-height: 100vh;
   /*background-color: var(--color-bg);*/ 
-  background-image: url( 'static/images/husky.jpg' );
+  background-image: url('{{ STATIC_URL }}images/husky.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
