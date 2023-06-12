@@ -47,10 +47,10 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-size: 1.5rem;
-  /*color: var(--color-light-gray);*/
+  color: var(--color-light-gray);
   min-height: 100vh;
   /*background-color: var(--color-bg);*/ 
-  background-image: url('static/images/husky.jpg');
+  background-image: url('/static/images/husky.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
