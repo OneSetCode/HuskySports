@@ -79,17 +79,6 @@ WSGI_APPLICATION = 'Sportsbud.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# ---- MicroSoft SQL Server Database (mssql-django)
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'mssql',  
-#         'NAME': os.getenv("DBName"),
-#         'HOST': os.getenv("Host"), 
-#         'PORT': os.getenv("Port"), 
-#         'USER': os.getenv("UserID"),  
-#         'PASSWORD': os.getenv("Password"), 
-#     }
-# }
 
 # ---- Default SQLite database
 '''DATABASES = {
@@ -98,11 +87,8 @@ WSGI_APPLICATION = 'Sportsbud.wsgi.application'
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }'''
-# ---- Migrate to Heroku Postgres database
-# import dj_database_url
-# db_from_env = dj_database_url.config(conn_max_age=600)
-# DATABASES['default'].update(db_from_env)
 
+# MongoDB settings
 DATABASES = {
         'default': {
             'ENGINE': 'djongo',
