@@ -167,7 +167,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOW_ALL_ORIGINS = True
-CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1','https://web-production-dfdf.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['127.0.0.1','web-production-dfdf.up.railway.app','https://web-production-dfdf.up.railway.app']
 
 
 # --- S3 BUCKETS CONFIGURE
