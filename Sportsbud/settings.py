@@ -109,7 +109,7 @@ DATABASES = {
             'NAME': 'mymongodb',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://mongouser:cLV7U5qPX5txUIw0@cluster0.okaerau.mongodb.net/?retryWrites=true&w=majority'
+                'host': os.getenv("MONGODB")
             }  
         }
 }
