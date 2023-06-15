@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-b-+*k@nc$!_%lctf_s_lrjnm%dcbcs!43$=ljg!za_#qxi7gtd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','huskysports-production.up.railway.app','https://huskysports-production.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1','huskysports-production.up.railway.app']
 
 
 # Application definition
@@ -167,7 +167,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOW_ALL_ORIGINS = True
-CSRF_TRUSTED_ORIGINS = ['127.0.0.1','huskysports-production.up.railway.app','https://huskysports-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1','https://huskysports-production.up.railway.app']
 
 
 # --- S3 BUCKETS CONFIGURE
