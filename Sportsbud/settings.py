@@ -92,29 +92,27 @@ WSGI_APPLICATION = 'Sportsbud.wsgi.application'
 # }
 
 # ---- Default SQLite database
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+}'''
 # ---- Migrate to Heroku Postgres database
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
 
-# ---- MySQL databse (pymysql, imported in _init_.py)
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',  
-#         'NAME': os.getenv("DBName"),
-#         'HOST': os.getenv("Host"), 
-#         'PORT': os.getenv("Port"), 
-#         'USER': os.getenv("UserID"),  
-#         'PASSWORD': os.getenv("Password"), 
-#     }
-# }
- 
+DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'mymongodb',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://mongouser:cLV7U5qPX5txUIw0@cluster0.okaerau.mongodb.net/?retryWrites=true&w=majority'
+            }  
+        }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
